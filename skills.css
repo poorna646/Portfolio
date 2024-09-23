@@ -1,0 +1,85 @@
+/* .container1 img{
+    width: 40%;
+    padding-left: 30%;
+    margin: 2%;
+} */
+.card1,.card2,.card3,.card4,.card5,.card6,.card7,.card8,.card9{
+    border: 1px solid white;
+    width: 50%;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    
+}
+.program{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+.design{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+}
+.extra
+{
+    display: flex;
+    flex-direction: row;
+    margin: 2%;
+    
+}
+/* .extra img{
+    width: 30%;
+    margin: 10px;   
+} */
+
+.top{
+    padding-left: 44%;
+    padding-top: 1%;
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.program, .design, .extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8, .card9 {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card1 img, .card2 img, .card3 img, .card4 img, .card5 img, .card6 img, .card7 img, .card8 img, .card9 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.card1:hover img, .card2:hover img, .card3:hover img, .card4:hover img, .card5:hover img, .card6:hover img, .card7:hover img, .card8:hover img, .card9:hover img {
+    transform: scale(1.1);
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.card1:hover .overlay, .card2:hover .overlay, .card3:hover .overlay, .card4:hover .overlay, .card5:hover .overlay, .card6:hover .overlay, .card7:hover .overlay, .card8:hover .overlay, .card9:hover .overlay {
+    opacity: 1;
+}
